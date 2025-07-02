@@ -4,7 +4,7 @@ export default function Home() {
       <div className="pt-24 flex flex-col items-center justify-center h-screen text-center px-4">
         <h1 className="text-5xl md:text-6xl font-bold mb-4">Jacob Farrington</h1>
         <p className="text-xl md:text-2xl text-gray-700 max-w-2xl">
-          Data Scientist passionate about building soccer tech and insightful data products.
+          Data Scientist passionate about building insightful data products.
         </p>
       </div>
     </main>
