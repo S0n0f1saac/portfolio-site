@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body style={{ fontFamily: '"Times New Roman", serif' }}>
         <Navbar />
         {children}
       </body>
