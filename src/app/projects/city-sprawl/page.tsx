@@ -29,13 +29,22 @@ export default function CitySprawl() {
     >
       <div className="pt-24 max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold mb-6 text-center">
-          Urban Sprawl in 3 Texas Cities
+          City Lights 2030: Forecasting U.S. Urban Expansion
         </h1>
         <p className="text-lg text-gray-300 mb-10 text-center">
-          This project uses VIIRS nighttime light data from 2012–2023 to
-          visualize urban sprawl in Texas, focusing on Dallas, Houston, and
-          Austin.
+          A predictive analysis on the future of urbanization across the US
         </p>
+
+        <div className="text-center mb-10">
+          <a
+            href="/documents/city-sprawl-summary.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 underline hover:text-blue-200 transition"
+          >
+            View full Research Report (PDF)
+          </a>
+        </div>
 
       <div className="relative w-full h-[480px]">
         {images.map((image, i) => (
