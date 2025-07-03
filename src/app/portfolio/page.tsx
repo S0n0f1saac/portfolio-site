@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Portfolio() {
   return (
     <main className="min-h-screen px-6 py-16 bg-white text-gray-900">
@@ -7,14 +9,17 @@ export default function Portfolio() {
           <ProjectCard
             title="MatchMetrics"
             description="Dashboard for delivering soccer stats to youth clubs."
+            link="/projects/matchmetrics"
           />
           <ProjectCard
             title="Find Your Football Twin"
             description="Tool to compare users to pro players based on stats."
+            link="/projects/football-twin"
           />
           <ProjectCard
             title="Urban Sprawl in 3 Cities"
-            description="Geospatial visualizations showing city growth over time."
+            description="Geospatial visualizations showing city growth using nighttime lights."
+            link="/projects/city-sprawl"
           />
         </div>
       </div>
@@ -22,12 +27,23 @@ export default function Portfolio() {
   );
 }
 
-function ProjectCard({ title, description }: { title: string, description: string }) {
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  link: string;
+}
+
+function ProjectCard({ title, description, link }: ProjectCardProps) {
   return (
-    <div className="p-6 border rounded-2xl shadow hover:shadow-lg transition duration-200">
-      <h2 className="text-xl font-semibold mb-2">{title}</h2>
-      <p className="text-gray-600 text-sm">{description}</p>
-    </div>
+    <Link href={link}>
+      <div className="block p-6 border rounded-2xl shadow hover:shadow-lg transition duration-200 cursor-pointer">
+        <h2 className="text-xl font-semibold mb-2">{title}</h2>
+        <p className="text-gray-600 text-sm">{description}</p>
+      </div>
+    </Link>
   );
 }
+
+
+
 
