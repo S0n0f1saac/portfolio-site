@@ -19,7 +19,7 @@ export default function Portfolio() {
           <ProjectCard
             title="City Lights 2030: Forecasting U.S. Urban Expansion"
             description="A predictive analysis on the future of urbanization across the US"
-            link="/projects/city-sprawl"
+            link="/city-sprawl"
           />
         </div>
       </div>
