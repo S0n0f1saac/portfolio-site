@@ -17,8 +17,8 @@ export default function Portfolio() {
             link="/projects/football-twin"
           />
           <ProjectCard
-            title="Urban Sprawl in 3 Cities"
-            description="Geospatial visualizations showing city growth using nighttime lights."
+            title="Urban Sprawl"
+            description="Geospatial visualizations using nighttime lights."
             link="/projects/city-sprawl"
           />
         </div>
